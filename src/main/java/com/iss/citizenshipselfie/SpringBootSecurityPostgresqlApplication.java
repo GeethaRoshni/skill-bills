@@ -1,13 +1,13 @@
-package com.skill.bills;
+package com.iss.citizenshipselfie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BillsApplication {
+public class SpringBootSecurityPostgresqlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BillsApplication.class, args);
+		SpringApplication.run(SpringBootSecurityPostgresqlApplication.class, args);
 	}
 
 }
