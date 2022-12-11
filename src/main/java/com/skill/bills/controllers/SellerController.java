@@ -20,6 +20,6 @@ public class SellerController {
 
     @GetMapping("/all")
     public ResponseEntity<List<Seller>> getAll() {
-        return ResponseEntity.ok().body(sellerService.getAllSellers());
+        return ResponseEntity.ok().body(sellerService.getAll());
     }
 }

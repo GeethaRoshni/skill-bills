@@ -12,7 +12,7 @@ public class SellerService {
     @Autowired
     private SellerRepository sellerRepository;
 
-    public List<Seller> getAllSellers() {
+    public List<Seller> getAll() {
         return sellerRepository.findAll();
     }
 }
