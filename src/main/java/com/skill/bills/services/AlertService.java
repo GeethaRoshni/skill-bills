@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class AlertService {
     @Autowired
-    AlertRespository alertRespository;
+    private AlertRespository alertRespository;
 
     public List<Alert> getAll(){
         return alertRespository.findAll();

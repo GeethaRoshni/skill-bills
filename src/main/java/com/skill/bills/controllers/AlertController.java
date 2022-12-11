@@ -19,7 +19,7 @@ public class AlertController {
     private AlertService alertService;
 
     @GetMapping("/all")
-    public ResponseEntity<List<Alert>> getAllAlert(){
+    public ResponseEntity<List<Alert>> getAll(){
         return ResponseEntity.ok().body(alertService.getAll());
     }
 }

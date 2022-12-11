@@ -10,7 +10,7 @@ public class Alert {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String alertMessage;
+    private String message;
     private String typeOfMessage;
 
     public long getId() {
@@ -21,12 +21,12 @@ public class Alert {
         this.id = id;
     }
 
-    public String getAlertMessage() {
-        return alertMessage;
+    public String getMessage() {
+        return message;
     }
 
-    public void setAlertMessage(String alertMessage) {
-        this.alertMessage = alertMessage;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public String getTypeOfMessage() {
