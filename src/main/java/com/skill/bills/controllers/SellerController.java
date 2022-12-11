@@ -1,5 +1,6 @@
 package com.skill.bills.controllers;
 
+import com.skill.bills.dtos.SellerDto;
 import com.skill.bills.entity.Seller;
 import com.skill.bills.services.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class SellerController {
     private SellerService sellerService;
 
     @GetMapping("/all")
-    public ResponseEntity<List<Seller>> getAll() {
+    public ResponseEntity<List<SellerDto>> getAll() {
         return ResponseEntity.ok().body(sellerService.getAll());
     }
 }
