@@ -8,7 +8,7 @@ public class CustomerDetailsDto {
     private String fatherName;
     private String address;
     private Long mobile;
-    private Long altmobile;
+    private Long alternativeMobile;
     private String mailId;
     private String occupation;
     private Long aadharNo;
@@ -65,12 +65,12 @@ public class CustomerDetailsDto {
         this.mobile = mobile;
     }
 
-    public Long getAltmobile() {
-        return altmobile;
+    public Long getAlternativeMobile() {
+        return alternativeMobile;
     }
 
-    public void setAltmobile(Long altmobile) {
-        this.altmobile = altmobile;
+    public void setAlternativeMobile(Long alternativeMobile) {
+        this.alternativeMobile = alternativeMobile;
     }
 
     public String getMailId() {
