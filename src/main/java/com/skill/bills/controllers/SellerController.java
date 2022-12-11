@@ -16,10 +16,10 @@ import java.util.List;
 @RequestMapping("/api/seller")
 public class SellerController {
     @Autowired
-    SellerService sellerService;
+    private SellerService sellerService;
 
     @GetMapping("/all")
-    public ResponseEntity<List<Seller>> retriveAllSellers() {
+    public ResponseEntity<List<Seller>> getAll() {
         return ResponseEntity.ok().body(sellerService.getAllSellers());
     }
 }
