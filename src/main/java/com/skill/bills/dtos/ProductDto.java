@@ -7,6 +7,8 @@ public class ProductDto {
 
     private ManufacturerDto manufacturer;
 
+    private
+
     private String barcode;
 
     public Long getId() {
